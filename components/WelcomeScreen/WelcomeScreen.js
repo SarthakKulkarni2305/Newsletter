@@ -3,12 +3,8 @@ import { StyleSheet, Text, View, Image , TouchableOpacity , Button } from 'react
 import  * as Constants from '../src/ConstantUrlMedia';
 
 
-export default function WelcomeScreen() {
-    const handlePress = () => {
-        // Function to handle button press
-        console.log('Sir t9awd hh');
-        // You can perform any action here when the button is pressed
-      };
+export default function WelcomeScreen({ navigation }) {
+    
   return (
   <View style={styles.container}>
     <View style={styles.Text_Lemon_View}>
@@ -23,11 +19,13 @@ export default function WelcomeScreen() {
      </View>
      </View>
      <View style={styles.buttonView}>
-            <TouchableOpacity style={styles.button} onPress={handlePress}>
+            <TouchableOpacity style={styles.button} onPress={() => {
+             navigation.navigate('LoginScreen');
+                  }}>
                 <Text style={styles.buttonText}>Newsletter</Text>
             </TouchableOpacity>
      </View>
-      { /*<Button title="Newsletter" onPress={handlePress}   style={styles.buttonNewsletter}/>*/}
+     
 </View>
   );
 }

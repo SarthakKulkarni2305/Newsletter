@@ -1,9 +1,6 @@
 import {   Image   } from 'react-native';
 
-                                  /// ----- Image ------ \\\
-        
-        
-
+ 
         import Welcome  from './welcomescreen.png';
         export const Export_Welcome = Image.resolveAssetSource(Welcome).uri;
 

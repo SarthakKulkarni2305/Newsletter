@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 
 import  * as Constants from '../src/ConstantUrlMedia';
 
-
-
 export default function LoginScreen() {
 
     const [inputValue, setInputValue] = useState('');
@@ -23,10 +21,9 @@ export default function LoginScreen() {
   };
   return (
   <View style={styles.container}>
-       
-              
+
                         <Image
-                                        source={{ uri: Constants.Export_Loginscreen }} // Replace with your image path
+                                        source={{ uri: Constants.Export_Loginscreen }}
                                         style={styles.backgroundImage}
                             />
                  
@@ -61,25 +58,21 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    //justifyContent: 'center',
     backgroundColor:'#fff',
   },
   backgroundImage: {
     width: 96, 
     height: 108, 
     resizeMode: 'cover', 
-    //backgroundColor:'red',
     marginTop:20,
   },
   Text_Lemon:{
     fontSize: 20,
     textAlign: 'center',
-    //fontWeight: 'bold',
     marginTop:30,
     marginLeft:'10%',
     marginRight:'10%',
   },
-
   input_TextInput:{
     width:'80%',
   },

@@ -10,7 +10,7 @@ export default function WelcomeScreen({ navigation }) {
     <View style={styles.Text_Lemon_View}>
        <View >
             <Image
-                            source={{ uri: Constants.Export_Welcome }} // Replace with your image path
+                            source={{ uri: Constants.Export_Welcome }} 
                             style={styles.backgroundImage}
                 />
       </View>
@@ -35,11 +35,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-   // justifyContent: 'center',
-   // backgroundColor: 'orange',
-   // justifyContent: 'space-between',
   },
-  
   backgroundImage: {
     width: 106, 
     height: 186, 
@@ -62,20 +58,13 @@ const styles = StyleSheet.create({
   buttonView:{
     width:'80%',
     marginTop: 20,
-   //backgroundColor:'red',
-   //justifyContent: 'flex-end',
    flex: 0.1,
   },
   button:{
     backgroundColor:'#40524c',
     padding : 4,
-   
     alignItems: 'center',
-  
     borderRadius: 8,
-   // flex: 1,
- 
-    
   },
   buttonText: {
     color: '#fff',

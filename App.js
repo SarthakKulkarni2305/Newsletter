@@ -1,8 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-import LittleLemonHeader from './components/LittleLemon/LittleLemonHeader';
-import LittleLemonFooter from './components/LittleLemon/LittleLemonFooter';
 import WelcomeScreen from './components/WelcomeScreen/WelcomeScreen';
 import LoginScreen from './components/LoginScreen/LoginScreen';
 
@@ -11,28 +9,17 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
 
-
-
-
-
-
-
-
 export default function App() {
 
- 
    return (
     <NavigationContainer>
       
-      
     <Stack.Navigator>
-
 
     <Stack.Screen name="WelcomeScreen" component={WelcomeScreen}
     options={{
       title: 'Welcome' ,
       headerTitleStyle: {
-    //   fontFamily:'Cormorant-Italic',
        fontSize: 20,
       },
       headerTitleAlign: 'center',
@@ -43,7 +30,6 @@ export default function App() {
    options={{
     title: 'Subscribe' ,
     headerTitleStyle: {
-    // fontFamily:'Cormorant-Italic',
      fontSize: 20,
     },
     headerTitleAlign: 'center',
@@ -51,16 +37,8 @@ export default function App() {
     
     />
 
-
-
-
-
-
-    
-      
     </Stack.Navigator>
  
-    
   </NavigationContainer>
   );
 }

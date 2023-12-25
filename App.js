@@ -16,26 +16,7 @@ const Stack = createNativeStackNavigator();
 
 
 
-{/*
-export default function App() {
-  return (
-  <View>
-  <NavigationContainer>
-  <View style={styles.container}>
- <LittleLemonHeader />
-    <Stack.Navigator initialRouteName="Login">
-    <Stack.Screen name="Welcome" component={WelcomeScreen} />
-      <Stack.Screen name="Login" component={Details_A} />
-    </Stack.Navigator>
-  </View>
-  <View style={styles.footerContainer}>
-   <LittleLemonFooter />
-  </View>
-</NavigationContainer>
-</View>
-  );
-}
-*/}
+
 
 export default function App() {
 
@@ -60,7 +41,7 @@ export default function App() {
   
   <Stack.Screen name="LoginScreen" component={LoginScreen}
    options={{
-    title: 'Details' ,
+    title: 'Subscribe' ,
     headerTitleStyle: {
     // fontFamily:'Cormorant-Italic',
      fontSize: 20,
